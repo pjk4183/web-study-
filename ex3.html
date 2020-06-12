@@ -1,17 +1,42 @@
 <!doctype html>
 <html>
+
+  <head>
+    <style>
+      .js{
+        font-weight: bold; 
+        color:red;
+      }
+      #first{
+        color:green;
+      }
+      span{
+        color:blue;
+      }
+    </style> 
+    <!-- .js -> class안에 있는 js를 가리킴, font-weight : bold (진하게 만듬) -->
+    <!-- '.'이 붙으면 class, '#'이 붙으면 id (class보다 id가 우선순위, id는 식별용이라 한번만 사용해야 함, class는 group)  -->
+    <!-- span -> 모든 span태그  (우선순위: id > class > span)-->
+  </head>
+
+
 <head>
   <h1><a href="index.html">WEB</a></h1>  <!--  <a href="링크"> </a> : 링크로 이동  -->
-  <h2 style="background-color: coral; color:powderblue">JavaScript</h2> <!-- CSS -->
+  <h2 style="background-color: coral; color:powderblue">JavaScript</h2> <!-- CSS (배경과 글씨색 변경)-->
   <p>
-    JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, 
+    <!-- 제어하고 싶은 단어가 있을 경우 div나 span으로 아무 기능은 없지만 분리하여 추가 기능을 부여 가능-->
+    <!-- <div>JavaScript</div> CSS (아무것도 의미 없고 단지 분리시키는 태크, but! 줄 전체를 선택하기 때문에 다음내용들은 줄바꿈이 됨) -->
+    <span id = "first" class="js">JavaScript</span> <!-- CSS (div와 같이 아무 의미도 없지만 줄바꿈이 되지 않음)--> 
+     (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, 
     dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming 
-    language. Alongside HTML and CSS, JavaScript is one of the three core technologies 
+    language. Alongside <span>HTML</span> and <span>CSS</span>, 
+    <span class="js">JavaScript</span> is one of the three core technologies 
     of World Wide Web content production. It is used to make webpages interactive and 
     provide online programs, including video games. The majority of websites employ it, 
     and all modern web browsers support it without the need for plug-ins by means of a 
-    built-in JavaScript engine. Each of the many JavaScript engines represent a different 
-    implementation of JavaScript, all based on the ECMAScript specification, with some engines 
+    built-in <span class="js">JavaScript</span> engine. Each of the many 
+    <span class="js">JavaScript</span> engines represent a different 
+    implementation of <span class="js">JavaScript</span>, all based on the ECMAScript specification, with some engines 
     not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
   </p>
 </body>
